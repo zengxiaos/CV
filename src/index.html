@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #eee;
+        margin: 20px 0;
+      }
+
+      article {
+        width: 21cm;
+        height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+    </style>
+    <style>
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+
+      ol,
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+      }
+
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+
+      h1 {
+        font-size: 26px;
+        margin-top: 0;
+      }
+
+      p {
+        margin: 0.3em 0;
+      }
+
+      .bio {
+        position: relative;
+      }
+
+      .bio img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+    <style>
+      .projects {
+      }
+
+      .projects strong {
+        color: #f60;
+      }
+
+      .projects p {
+        color: #666;
+      }
+
+      .projects > ol {
+        margin-top: 0;
+        list-style-position: inside;
+        padding: 0;
+      }
+
+      .projects > ol > li {
+        margin-bottom: 24px;
+      }
+
+      .projects > ol > li > header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .projects > ol > li h3 {
+        display: inline-block;
+      }
+    </style>
+    <style>
+      .openSource {
+      }
+
+      .openSource p {
+        color: #666;
+      }
+
+      .openSource > ul {
+      }
+
+      .openSource > ul > li {
+        margin-bottom: 24px;
+      }
+
+      .openSource header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .openSource h3 {
+      }
+    </style>
+    <style>
+      .skills .skillWrapper {
+          display: flex;
+      }
+      .skills .skillWrapper #skill{
+          width: 50%;
+          height: 270px;
+      }
+      @media screen and (max-width: 500px){
+          .skills .skillWrapper #skill{
+              display: none;
+          }
+
+      }
+      .skills strong {
+        color: #f60;
+      }
+
+      .skills p {
+        color: #666;
+      }
+    </style>
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+
+        article {
+          width: auto;
+          height: auto;
+        }
+
+        .bio img {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section class="bio">
+        <h1>曾其森</h1>
+        <img src="./images/zqs.jpg" alt="" width="75" />
+        <p>男 | 中共党员 | 23岁 | 前端开发工程师 |</p>
+        <p>手机：15775914397 | 微信：15775914397 | 邮箱：2272652982@qq.com</p>
+      </section>
+
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>极简记账-Vue版</h3>
+              <span>
+                <a href="https://gitee.com/zqs977/money-vue" target="_blank"
+                  >码源链接</a
+                >
+                <a href=" https://zqs977.gitee.io/money-vue" target="_blank"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              一个基于<strong>Vue</strong>，<strong>VueX</strong>，<strong>TypeScript</strong>的移动端单页面应用，
+              <br />
+              其特点是简单方便，可以通过日期快速查询到当天的记录，还可以通过曲线图查看自己的消费变化。
+              <br />该项目使用了<strong>VueX</strong>让我对Vue数据集中管理的理念有了深刻的了解
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>极简记账-React版</h3>
+              <span>
+                <a href="https://gitee.com/zqs977/money-react" target="_blank"
+                  >码源链接</a
+                >
+                <a
+                  href="https://zqs977.gitee.io/money-react/#/home"
+                  target="_blank"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              该项目是我在学习
+              <strong> React</strong>后，所写的极简记账的React版，
+                <br> 其用法与功能和Vue版的基本一样, 依旧使用<strong>TypeScript</strong>编写，
+                在该项目的编写过程中，我了解到了React和Vue两个框架在理念上的差别，
+                <br>Vue注重数据的响应式， 而React则认为不可变数据可以贷给程序员更多的自由度。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>小鲸鱼UI</h3>
+              <span>
+                <a
+                  href="https://github.com/zengxiaos/xiaojingyu-source"
+                  target="_blank"
+                  >码源链接</a
+                >
+                <a href="https://zqs977.gitee.io/xiaojingyu-ui/" target="_blank"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              该项目是我在学习<strong>Vue3</strong>的过程中，为使自己更好的学习和应用Vue3而编写的UI库<br>
+                各组件的编写十分简洁，用户可以根据提示下载并使用。
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+          <li>
+            <header>
+              <h3>小Z导航</h3>
+              <span>
+                <a href="https://gitee.com/zqs977/z-nav" target="_blank"
+                  >码源链接</a
+                >
+                <a href="https://zqs977.gitee.io/z-nav/" target="_blank">项目预览</a>
+              </span>
+            </header>
+            <p>在学习jQuery时，运用jQuery制作的一个简单的导航</p>
+          </li>
+          <li>
+            <header>
+              <h3>自己写的DOM库</h3>
+              <a href="https://github.com/zengxiaos/dom-" target="_blank">码源链接</a>
+            </header>
+            <p>为了更好的了解原生js，而尝试编写的一个简单的DOM库</p>
+          </li>
+          <li>
+            <header>
+              <h3>css绘制冰墩墩</h3>
+              <span>
+                <a href="https://gitee.com/zqs977/bingdundun" target="_blank">码源链接</a>
+                <a href="https://zqs977.gitee.io/bingdundun/" target="_blank">项目预览</a>
+              </span>
+            </header>
+            <p>在学习CSS的过程中，所绘制的一个可爱的冰墩墩图案。</p>
+          </li>
+          <li>
+            <header>
+              <h3>简易画板</h3>
+              <span>
+                <a href="https://gitee.com/zqs977/canvas" target="_blank">码源链接</a>
+                <a href="http://zqs977.gitee.io/canvas/" target="_blank">项目预览</a>
+              </span>
+            </header>
+            <p>运用css的canvas编写的一个极简画板。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h2>技能介绍</h2>
+          <div class="skillWrapper">
+              <div id="skill"></div>
+        <p>可以根据设计稿件，精准的完成页面 <br>
+            熟悉前后端分离技术，包括 AJAX、跨域、前端路由、Cookie、Session 等<br>
+            熟练掌握 Vue全家桶的使用，包括 VueCli、VueRouter、Vuex 等<br>
+            熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、Redux 等<br>
+            熟悉 ES6，包括 let / Promise / await / 析构赋值<br>
+            了解 TypeScript 的使用，我的项目就是 TS 实现的<br>
+        </p>
+          </div>
+      </section>
+      <section>
+        <h2>其他链接</h2>
+          我的<a href="https://juejin.cn/user/1500178886441357" style="color: #ff6600;">博客链接</a>，其中记录了我在前端学习过程中的一些新的 <br>
+          我的 <a href="https://github.com/zengxiaos" style="color: #ff6600;"> github链接</a>，在学习前端的过程中，我会将代码存储在github仓库中。
+      </section>
+      <section class="education">
+        <h2>教育经历</h2>
+          2022年毕业本科生，大学专业为金融学，在校期间担任班级班长，学院辩论队队长，团支部书记秘书. <br>
+      </section>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
